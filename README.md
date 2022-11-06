@@ -4,16 +4,25 @@ This is my personal Linux setting.
 * 기타 설정해야 할 것([other.md](https://github.com/2daeeun/my_i3/blob/master/etc_documents/other_set.md))
 * footswitch 설정([footswitch.md](https://github.com/2daeeun/my_l3/blob/master/etc_documents/footswitch.md))
 * 학교 수업을 위해 ~~어쩔 수 없이~~ 설치해야 할 프로그램([school.md](https://github.com/2daeeun/my_i3/blob/master/etc_documents/school.md))
+
+***
+### my_i3 Download
+```swift
+mkdir -p ~/Documents/github
+```
+```swift
+cd ~/Documents/github && git clone https://github.com/2daeeun/my_i3.git
+```
 ***
 ### 유저 sudo 권한 부여
 ```swift
-$ sudo adduser USERNAME
+sudo adduser USERNAME
 ```
 ```swift
-$ passwd USERNAME
+passwd USERNAME
 ```
 ```swift
-$ sudo usermod -aG sudo USERNAME
+sudo usermod -aG sudo USERNAME
 ```
 
 ### install package
@@ -53,10 +62,6 @@ sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CU
 ```swift
 sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
-### 설정 파일 복사
-```swift
-sudo ./symbolic_link.sh
-```
 ***
 ### Node.Js 설치
 ```swift
@@ -75,6 +80,11 @@ echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/deb
 ```
 ```swift
 sudo apt-get update && sudo apt-get install yarn -y
+```
+***
+### 설정 파일 복사
+```swift
+sudo ./symbolic_link.sh
 ```
 ***
 ### nvim PlugInstall
