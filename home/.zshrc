@@ -25,15 +25,11 @@ alias powerup='sudo apt-get update && sudo apt-get full-upgrade && sudo apt auto
 alias rrm="sudo mv -t /home/leedaeeun/.local/share/Trash/files"
 alias doc="cd ~/Documents"
 alias dow="cd ~/Downloads"
-alias my="cd ~/my_linux"
-alias reboot="sudo reboot"
-alias turnoff="sudo shutdown -h now"
-#alias lock="/home/leedaeeun/my_linux/xtrlock.sh" 
-#alias cal="if [ -t 1 ] ; then ncal -b ; else /usr/bin/cal ; fi"
+alias github="cd ~/Documents/github"
+alias lock="/home/leedaeeun/my_linux/xtrlock.sh" 
+alias cal="if [ -t 1 ] ; then ncal -b ; else /usr/bin/cal ; fi"
 alias weather_home="curl wttr.in/37.5508,126.8648"
 alias weather_school="curl wttr.in/37.4868,126.8224"
-alias ㅣㄴ='ls'
-alias 퍄='vi'
 alias e="exit"
 
 #unzip 한글 깨짐 방지
@@ -43,7 +39,8 @@ export ZIPINFO="-O cp949"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
-
+#Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on
 alias java='java "$_SILENT_JAVA_OPTIONS"'
 
+#"Shutdown & Reboot Command Not Found" error solve
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/sbin
