@@ -1,4 +1,4 @@
-### How to use「FS3-P USB Triple Foot Switch Pedal Control」in linux
+### How to set 「FS3-P USB Triple Foot Switch Pedal Control」 in linux
 ![img](Foot_Switch_Pedal.jpg )
 #### Install dependency packages
 ```swift
@@ -26,6 +26,6 @@ footswitch -1 -k esc -2 -a esc -a : -a w -a q -a enter -3 -a esc -a : -a w -a en
 가운데 : Vim 저장하고 나가기  
 오른쪽 : Vim 파일 저장하기
 ***
-Reference  
-[footswitch github](https://github.com/rgerganov/footswitch)  
-[HIDAPI library](https://qbicz.github.io/hidapi/)
+##### Reference  
+* [footswitch github](https://github.com/rgerganov/footswitch)  
+* [HIDAPI library](https://qbicz.github.io/hidapi/)
