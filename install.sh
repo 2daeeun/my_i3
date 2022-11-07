@@ -53,7 +53,8 @@ sudo apt-get install cheese -y 					                # 카메라
 sudo apt-get install parcellite -y				                # (클립보드)(단축키는 Ctrl+Alt+H)
 sudo apt-get install xinput -y
 sudo apt-get install barrier -y
-sudo apt-get install fcitx-lib* fcitx-hangul fonts-nanum -y 	# 한글
+sudo apt-get install ibus ibus-hangul -y                        # ibus 한글
+#sudo apt-get install fcitx-lib* fcitx-hangul fonts-nanum -y 	# fcitx 한글
 sudo apt-get install brightnessctl -y
 sudo apt-get install alsa-utils -y				                # alsamixer(볼륨 조절)
 sudo apt-get install network-manager -y			            	# nmtui(네트워크 관리자)
