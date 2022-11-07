@@ -31,6 +31,7 @@ sudo apt-get install unison -y                                  # 양방향 데�
 sudo apt-get install i3 i3status -y                             # i3(window manager) 설치
 
 #---------- 보조 유틸리티 ----------
+sudo apt-get install arandr -y                                  # arandr GUI
 sudo apt-get install rofi -y
 sudo apt-get install lightdm -y                                 # 화면 잠금
 sudo apt-get install xfce4-power-manager -y                     # 전원 관리자
