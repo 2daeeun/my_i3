@@ -24,6 +24,7 @@ set cindent                     "C언어 자동 들여 쓰기
 set tabstop=4                   "탭을 4칸으로
 set shiftwidth=4                " >> 또는 << 키로 들여 쓰기 할때 스페이스의 갯수. 기본값 8
 set expandtab                   "탭을 스페이스로 바꾸기
+set langmap=ㅁa,ㅠb,ㅊc,ㅇd,ㄷe,ㄹf,ㅎg,ㅗh,ㅑi,ㅓj,ㅏk,ㅣl,ㅡm,ㅜn,ㅐo,ㅔp,ㅂq,ㄱr,ㄴs,ㅅt,ㅕu,ㅍv,ㅈw,ㅌx,ㅛy,ㅋz
 
 
 "==========플러그인 설치==========
