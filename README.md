@@ -6,20 +6,14 @@ This is my personal Linux setting.
 * 학교 수업을 위해 ~~어쩔 수 없이~~ 설치해야 할 프로그램([school.md](https://github.com/2daeeun/my_i3/blob/master/etc_documents/school.md))
 
 ***
-### my_i3 Download
+### my_i3 다운로드
 ```swift
-mkdir -p ~/Documents/github
-```
-```swift
-cd ~/Documents/github && git clone https://github.com/2daeeun/my_i3.git
+mkdir -p ~/Documents/github && cd ~/Documents/github && git clone https://github.com/2daeeun/my_i3.git
 ```
 ***
 ### 유저 sudo 권한 부여
 ```swift
-sudo adduser USERNAME
-```
-```swift
-passwd USERNAME
+su -
 ```
 ```swift
 sudo usermod -aG sudo USERNAME
@@ -84,7 +78,7 @@ sudo apt-get update && sudo apt-get install yarn -y
 ***
 ### 설정 파일 복사
 ```swift
-sudo ./symbolic_link.sh
+./symbolic_link.sh
 ```
 ***
 ### nvim PlugInstall
