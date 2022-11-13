@@ -99,6 +99,10 @@ CocInstall coc-python coc-java coc-clangd coc-jedi coc-pydocstring coc-sh coc-vi
 C/C++ Coc가 잘 설치되었는지 확인은 :CocCommand clangd.update 라고 입력하여 확인하기.    
 만약 안된다면 수동으로 sudo apt-get install clangd-12 로 설치하고, sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100 로 path 지정하기.
 
-
 CoC와 LSP 전반적으로 참조 사이트  
 **[coc-extnsions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)** <-원하는 LSP서버는 주로 여기를 참조하자  
+***
+### xfce4 지우기
+```swift
+sudo apt autoremove 'xfce4*'
+```
