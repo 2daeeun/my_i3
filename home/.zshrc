@@ -22,7 +22,7 @@ source $ZSH/oh-my-zsh.sh
 
 #alias 설정
 alias powerup='sudo apt-get update && sudo apt-get full-upgrade && sudo apt autoremove -y && sudo apt autoclean -y'
-alias rrm="sudo mv -t /home/leedaeeun/.local/share/Trash/files"
+alias rrm="sudo mv -t /tmp"
 alias doc="cd ~/Documents"
 alias dow="cd ~/Downloads"
 alias github="cd ~/Documents/github"

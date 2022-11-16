@@ -105,17 +105,11 @@ bindsym $mod+u exec x-terminal-emulator -e ~/.config/i3/monitor_choose.sh
 bindsym $mod+x kill
 bindsym $alt+F4 kill
 
-
 # ----- <창 초점 변경> -----
 bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+i focus up
 bindsym $mod+l focus right
-#bindsym $mod+j focus left
-#bindsym $mod+k focus down
-#bindsym $mod+l focus up
-#bindsym $mod+semicolon focus right
-
 
 # ----- <창 초점 변경(방향키 이용)> -----
 bindsym $mod+Left focus left
@@ -128,11 +122,6 @@ bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
 bindsym $mod+Shift+i move up
 bindsym $mod+Shift+l move right
-#bindsym $mod+Shift+j move left
-#bindsym $mod+Shift+k move down
-#bindsym $mod+Shift+l move up
-#bindsym $mod+Shift+semicolon move right
-
 
 # ----- <창 이동(방향키 이용)> -----
 bindsym $mod+Shift+Left move left
