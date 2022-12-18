@@ -19,6 +19,20 @@ sudo rm -rf google-chrome-stable_current_amd64
 sudo rm -rf /etc/apt/sources.list.d/google.list
 
 #---------- 리눅스 유틸리티 ----------
+# ack-grep -y
+# neofetch -y
+# terminator -y
+# htop -y
+# tlp tlp-rdw -y
+# neovim -y
+# xdotool -y                                 # 뭐하는 패키지 인지는 잘 모르겠는데 move-to-next-monitor 스크립트 사용하려면 필요함
+# rsync -y                                   # 단방향 데이터 sync
+# unison -y                                  # 양방향 데이터 sync
+# i3 i3status -y                             # i3(window manager) 설치
+
+
+
+
 sudo apt-get install ack-grep -y
 sudo apt-get install neofetch -y
 sudo apt-get install terminator -y
@@ -76,10 +90,10 @@ sudo apt-get install virtualbox -y
 sudo apt-get install firmware-amd-graphics libgl1-mesa-dri -y   # AMD GPU firmware?
 
 #snap
-sudo apt-get install snapd -y
-sudo systemctl unmask snapd.service
-sudo systemctl enable snapd.service
-sudo systemctl start snapd.service
+# sudo apt-get install snapd -y
+# sudo systemctl unmask snapd.service
+# sudo systemctl enable snapd.service
+# sudo systemctl start snapd.service
 
 #FlatPak & KakaoTalk
 sudo apt-get install ufw -y
@@ -105,17 +119,23 @@ sudo apt-get purge xiterm+thai -y
 sudo apt-get purge xterm -y
 sudo apt-get purge mlterm -y
 sudo apt-get purge parole -y
-#sudo apt-get purge firefox -y
-#sudo rm -rf /etc/firefox/ /usr/lib/firefox* /usr/lib/firefox-addons/ /home/leedaeeun/.mozilla
+# sudo apt-get purge firefox -y
+# sudo rm -rf /etc/firefox/ /usr/lib/firefox* /usr/lib/firefox-addons/ /home/leedaeeun/.mozilla
 
-#Fin
+# Fin
 sudo apt-get update
 sudo apt-get full-upgrade -y
 sudo apt autoremove -y
 sudo apt autoclean -y
 
 # Final message
-echo script complit
+echo "███████╗██╗███╗   ██╗██╗███████╗██╗  ██╗";
+echo "██╔════╝██║████╗  ██║██║██╔════╝██║  ██║";
+echo "█████╗  ██║██╔██╗ ██║██║███████╗███████║";
+echo "██╔══╝  ██║██║╚██╗██║██║╚════██║██╔══██║";
+echo "██║     ██║██║ ╚████║██║███████║██║  ██║";
+echo "╚═╝     ╚═╝╚═╝  ╚═══╝╚═╝╚══════╝╚═╝  ╚═╝";
+
  
 # Exit the script
 exit 0
