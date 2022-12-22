@@ -12,8 +12,9 @@ sudo apt install -y wget
 sudo apt install -y git
 
 # ----- Chrome Install -----
-sudo wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo apt update 
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo add-apt-repository "deb http://dl.google.com/linux/chrome/deb/ stable main"
+sudo apt update
 sudo apt install google-chrome-stable
 
 # wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
