@@ -1,110 +1,118 @@
 #!/bin/sh
 
-#전체 업그레이드
+# ----- Upgrade -----
 sudo apt-get update
 sudo apt-get full-upgrade -y
 sudo apt autoremove -y
 sudo apt autoclean -y
 
-#---------- 리눅스 유틸리티(최소한 있어야 하는 패키지) ----------
-sudo apt-get install sudo -y
-sudo apt-get install wget -y
-sudo apt-get install git -y
+# ----- Basic Package -----
+sudo apt install -y sudo
+sudo apt install -y wget
+sudo apt install -y git
 
-#크롬 설치
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install python3-apt -y
-sudo apt install ./google-chrome-stable_current_amd64.deb -y
-sudo rm -rf google-chrome-stable_current_amd64 
-sudo rm -rf /etc/apt/sources.list.d/google.list
+# ----- Chrome Install -----
+sudo wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo apt update 
+sudo apt install google-chrome-stable
 
-#---------- 리눅스 유틸리티 ----------
-# ack-grep -y
-# neofetch -y
-# terminator -y
-# htop -y
-# tlp tlp-rdw -y
-# neovim -y
-# xdotool -y                                 # 뭐하는 패키지 인지는 잘 모르겠는데 move-to-next-monitor 스크립트 사용하려면 필요함
-# rsync -y                                   # 단방향 데이터 sync
-# unison -y                                  # 양방향 데이터 sync
-# i3 i3status -y                             # i3(window manager) 설치
+# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+# sudo apt install python3-apt -y
+# sudo apt install ./google-chrome-stable_current_amd64.deb -y
+# sudo rm -rf google-chrome-stable_current_amd64
+# sudo rm -rf /etc/apt/sources.list.d/google.list
+
+# ----- Microcode for Intel/AMD -----
+# sudo apt install -y intel-microcode 
+sudo apt install -y amd64-microcode
+
+# ----- Window Manager -----
+sudo apt install -y xorg i3 i3status
+
+# ----- Sound packages -----
+sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa
+
+# ----- Brightness -----
+sudo apt install -y brightnessctl                           # Control device brightness
+
+# ----- 리눅스 유틸리티 ----------
+sudo apt install -y ack-grep                               # grep alternater
+sudo apt install -y neofetch                               # Show system information
+sudo apt install -y terminator                             # Terminator
+sudo apt install -y htop                                   # Task manager
+sudo apt install -y tlp tlp-rdw                            # Saving laptop battery power
+sudo apt install -y neovim                                 # NeoVim
+sudo apt install -y xdotool                                # command-line X11 automation tool
 
 
 
+# ----- Windows Manager Support Tool -----
+sudo apt install -y arandr                                  # arandr GUI
+sudo apt install -y rofi                                    # Application dmenu
+sudo apt install -y lightdm                                 # Lock Screen
+sudo apt install -y xfce4-power-manager                     # xfce power manager
+sudo apt install -y gpick                                   # Color Picker
+sudo apt install -y numlockx                                # Control the state of NumLock     
+sudo apt install -y vlc                                     # Video Player
+#sudo apt install -y xpad                                   # Sticky note application 
+sudo apt install -y kolourpaint                             # Paint
+sudo apt install -y mcomix                                  # Comic book viewer
+sudo apt install -y feh                                     # Image viewer
+sudo apt install -y gedit                                   # Text editor
+#sudo apt install -y leafpad                                # Text editor
+sudo apt install -y xfce4-screenshooter                     # screenshooter
+#sudo apt install -y mate-calc                              # Mate calculator
+sudo apt install -y apcalc                                  # CLI calculator
+sudo apt install -y libreoffice                             # Free office application
+sudo apt install -y aria2                                   # Command-line download utility
+sudo apt install -y cheese 					                # Camera
+sudo apt install -y parcellite				                # Clipboard tool (Shortcut : Ctrl+Alt+H)
+sudo apt install -y xinput                                  # utility to configure and test X input devices
+sudo apt install -y barrier                                 # KVM software
 
-sudo apt-get install ack-grep -y
-sudo apt-get install neofetch -y
-sudo apt-get install terminator -y
-sudo apt-get install htop -y
-sudo apt-get install tlp tlp-rdw -y
-sudo apt-get install neovim -y
-sudo apt-get install xdotool -y                                 # 뭐하는 패키지 인지는 잘 모르겠는데 move-to-next-monitor 스크립트 사용하려면 필요함
-sudo apt-get install rsync -y                                   # 단방향 데이터 sync
-sudo apt-get install unison -y                                  # 양방향 데이터 sync
-sudo apt-get install i3 i3status -y                             # i3(window manager) 설치
+# ----- Hangul input -----
+sudo apt install -y ibus ibus-hangul fonts-nanum            # ibus 한글
+#sudo apt install -y fcitx-lib* fcitx-hangul fonts-nanum 	# fcitx 한글
 
-#---------- 보조 유틸리티 ----------
-sudo apt-get install arandr -y                                  # arandr GUI
-sudo apt-get install rofi -y
-sudo apt-get install lightdm -y                                 # 화면 잠금
-sudo apt-get install xfce4-power-manager -y                     # 전원 관리자
-sudo apt-get install gpick -y
-sudo apt-get install numlockx -y
-sudo apt-get install vlc -y
-#sudo apt-get install xpad
-sudo apt-get install kolourpaint -y                             # 그림판
-#sudo apt-get install leafpad -y
-sudo apt-get install mcomix -y                                  # 만화책&이미지 뷰어
-sudo apt-get install feh -y                                     # 이미지 뷰어
-sudo apt-get install gedit -y
-sudo apt-get install xfce4-screenshooter -y                     # 스크린샷
-#sudo apt-get install mate-calc -y                              # 계산기
-sudo apt-get install apcalc -y                                  # CLI 기반 계산기
-sudo apt-get install libreoffice -y
-sudo apt-get install aria2 -y
-sudo apt-get install cheese -y 					                # 카메라
-sudo apt-get install parcellite -y				                # (클립보드)(단축키는 Ctrl+Alt+H)
-sudo apt-get install xinput -y
-sudo apt-get install barrier -y
-sudo apt-get install ibus ibus-hangul -y                        # ibus 한글
-#sudo apt-get install fcitx-lib* fcitx-hangul fonts-nanum -y 	# fcitx 한글
-sudo apt-get install brightnessctl -y
-sudo apt-get install alsa-utils -y				                # alsamixer(볼륨 조절)
-sudo apt-get install network-manager -y			            	# nmtui(네트워크 관리자)
-sudo apt-get install xtrlock -y			            	        # Lock display and mouse
+sudo apt install -y brightnessctl                           # Control device brightness
+sudo apt install -y network-manager			            	# nmtui(네트워크 관리자)
+sudo apt install -y xtrlock			            	        # Lock display and mouse
+
+
 #---------- 개발 유틸리티 ----------
-sudo apt-get install curl -y
-sudo apt-get install python3-pip -y
-sudo apt-get install software-properties-common -y 		        # PPA Support
-sudo apt-get install openjdk-11-jdk -y                          # JDK 11
-sudo apt-get install build-essential gcc g++ make -y            # C/C++ 컴파일러 & 기본 라이브러리
-sudo apt-get install libc6-dev -y 			                   	# stdio.h 해더파일
-sudo apt-get install ccls -y                                    # C/C++/Objective-C 언어 서버
-sudo apt-get install exuberant-ctags -y                         # ctag
-sudo apt-get install cscope -y                                  # cscope
-sudo apt-get install python3-dev python3-pip python3-venv -y    # 파이썬 개발 환경
-sudo apt-get install fuse libfuse2 -y                           # FUSE (Filesystem in Userspace) 
-sudo apt-get install virtualbox -y
-#---------- 기타 ----------
-sudo apt-get install firmware-amd-graphics libgl1-mesa-dri -y   # AMD GPU firmware?
+sudo apt install -y curl                                    # Command line to data transfer tool 
+sudo apt install -y software-properties-common 		        # PPA Support
+sudo apt install -y openjdk-17-jdk                          # JDK 17
+sudo apt install -y build-essential gcc g++ make            # C/C++ 컴파일러 & 기본 라이브러리
+sudo apt install -y libc6-dev 			                   	# stdio.h 해더파일
+sudo apt install -y ccls                                    # C/C++/Objective-C 언어 서버
+sudo apt install -y exuberant-ctags                         # ctag
+sudo apt install -y cscope                                  # cscope
+sudo apt install -y python3-dev python3-pip python3-venv    # python
+sudo apt install -y fuse libfuse2                           # FUSE (Filesystem in Userspace) 
+sudo apt install -y virtualbox                              # Virtual machine
+sudo apt install -y rsync                                   # one way
+sudo apt install -y unison                                  # both way
 
-#snap
-# sudo apt-get install snapd -y
+# ----- etc -----
+sudo apt install -y firmware-amd-graphics libgl1-mesa-dri   # AMD GPU firmware
+
+# snap
+# sudo apt install snapd -y
 # sudo systemctl unmask snapd.service
 # sudo systemctl enable snapd.service
 # sudo systemctl start snapd.service
 
 #FlatPak & KakaoTalk
-sudo apt-get install ufw -y
-sudo apt-get install ssh -y
+sudo apt install ufw -y
+sudo apt install ssh -y
 sudo ufw enable
 sudo ufw allow 22/tcp
-#sudo apt-get install flatpak -y
+#sudo apt install flatpak -y
 #sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 #sudo flatpak install flathub com.usebottles.bottles -y
 
-#remove
+# remove
 sudo apt-get update
 sudo apt-get purge nano -y
 sudo apt-get purge vim -y 
