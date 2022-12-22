@@ -60,7 +60,8 @@ sudo apt install -y mcomix                                  # Comic book viewer
 sudo apt install -y feh                                     # Image viewer
 sudo apt install -y gedit                                   # Text editor
 #sudo apt install -y leafpad                                # Text editor
-sudo apt install -y xfce4-screenshooter                     # screenshooter
+#sudo apt install -y xfce4-screenshooter                    # screenshooter
+sudo apt install -y scrot                                   # screenshooter
 #sudo apt install -y mate-calc                              # Mate calculator
 sudo apt install -y apcalc                                  # CLI calculator
 sudo apt install -y libreoffice                             # Free office application
