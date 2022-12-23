@@ -23,6 +23,7 @@ sudo usermod -aG sudo USERNAME
 ```swift
 sudo ./install.sh
 ```
+패키지 설치 이후 재부팅해서 i3 로그인
 ***
 ### Nerd Fonts 설치
 ```swift
@@ -101,8 +102,3 @@ C/C++ Coc가 잘 설치되었는지 확인은 :CocCommand clangd.update 라고 �
 
 CoC와 LSP 전반적으로 참조 사이트  
 **[coc-extnsions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)** <-원하는 LSP서버는 주로 여기를 참조하자  
-***
-### xfce4 지우기
-```swift
-sudo apt autoremove 'xfce4*'
-```
