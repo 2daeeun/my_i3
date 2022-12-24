@@ -1,8 +1,3 @@
-mkdir ~/Downloads
-mkdir ~/Pictures
-mkdir ~/Documents
-mkdir ~/Videos
-
 sudo rm -rf ~/.config/htop
 sudo rm -rf ~/.config/i3
 sudo rm -rf ~/.config/i3status

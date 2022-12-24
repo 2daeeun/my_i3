@@ -12,16 +12,16 @@ sudo apt install -y wget
 sudo apt install -y git
 
 # ----- Chrome Install -----
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo add-apt-repository "deb http://dl.google.com/linux/chrome/deb/ stable main"
-sudo apt update
-sudo apt install google-chrome-stable
+# wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+# sudo add-apt-repository "deb http://dl.google.com/linux/chrome/deb/ stable main"
+# sudo apt update
+# sudo apt install google-chrome-stable
 
-# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-# sudo apt install python3-apt -y
-# sudo apt install ./google-chrome-stable_current_amd64.deb -y
-# sudo rm -rf google-chrome-stable_current_amd64
-# sudo rm -rf /etc/apt/sources.list.d/google.list
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install python3-apt -y
+sudo apt install ./google-chrome-stable_current_amd64.deb -y
+sudo rm -rf google-chrome-stable_current_amd64
+sudo rm -rf /etc/apt/sources.list.d/google.list
 
 # ----- Microcode for Intel/AMD -----
 # sudo apt install -y intel-microcode 
