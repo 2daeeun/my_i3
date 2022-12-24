@@ -59,6 +59,13 @@ update-alternatives --config editor
 ```swift
 sudo apt-get update && sudo apt-get full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y
 ```
+***
+### how to use the latest Linux kernel
+```swift
+echo deb http://deb.debian.org/debian experimental main > /etc/apt/sources.list.d/experimental.list
+```
+then how to "sudo apt search linux-image-6."
+***
 ### 언어 설정
 ```swift
 sudo dpkg-reconfigure locales
