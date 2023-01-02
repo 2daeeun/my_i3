@@ -45,8 +45,6 @@ sudo apt install -y tlp tlp-rdw                            # Saving laptop batte
 sudo apt install -y neovim                                 # NeoVim
 sudo apt install -y xdotool                                # command-line X11 automation tool
 
-
-
 # ----- Windows Manager Support Tool -----
 sudo apt install -y arandr                                  # arandr GUI
 sudo apt install -y rofi                                    # Application dmenu
@@ -55,6 +53,9 @@ sudo apt install -y xfce4-power-manager                     # xfce power manager
 sudo apt install -y gpick                                   # Color Picker
 sudo apt install -y numlockx                                # Control the state of NumLock     
 sudo apt install -y vlc                                     # Video Player
+sudo apt install -y ranger                                  # ranger
+sudo apt install -y ncal                                    # calendar
+
 #sudo apt install -y xpad                                   # Sticky note application 
 sudo apt install -y kolourpaint                             # Paint
 sudo apt install -y mcomix                                  # Comic book viewer
