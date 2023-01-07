@@ -14,6 +14,7 @@ set title                       "타이틀바에 현재 편집 중인 파일을 
 set cursorline                  "커서가 있는 라인을 강조 표시 
 set wrap                        "너무 긴 줄 자동 줄바꿈
 "set nowrap                     "wrap 해제
+set mouse=a                     "터미널 창에 마우스 (mouse) 클릭이 가능하도록 설정
 set clipboard=unnamed           "시스템의 클립 보드에서 vim 붙여 넣기. 
 set fileencodings=utf8,euc-kr   "한글 사용
 set noswapfile                  "vim에서 스왑 파일 생성 비활성화
@@ -66,8 +67,13 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }     "Mar
 Plug 'xolox/vim-easytags'                           "ctags를 쉽게 쓸 수 있게 해주는 easytags플러그인
 Plug 'xolox/vim-misc'
 Plug 'ronakg/quickr-cscope.vim'                     "cscope를 vim에서 편하게 쓸 수 있도록 도와주는 quickr-cscope.vim 플러그인
-"-----유용하지만 사용 안하는 플러그인-----
+Plug 'wakatime/vim-wakatime'                        "wakatime
+
+"-----tag-----
 Plug 'preservim/tagbar'                            "현재 파일내의 class, struct, prototype, typedef, macro 등을 요약하여 표시한다.
+Plug 'vim-scripts/taglist.vim'                     "taglist
+
+"-----유용하지만 사용 안하는 플러그인-----
 "Plug 'tpope/vim-fugitive'                          "git과 함께 쓰면 좋은 것
 "ctrlp.vim                                          "vim내에서 파일을 쉽게 검색해서 해당 파일을 열게 해주는 플러그인
 "Plug 'anyakichi/vim-surround'                      "수동 괄호 감싸기
