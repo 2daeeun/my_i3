@@ -55,7 +55,6 @@ sudo apt install -y numlockx                                # Control the state 
 sudo apt install -y vlc                                     # Video Player
 sudo apt install -y ranger                                  # ranger
 sudo apt install -y ncal                                    # calendar
-
 #sudo apt install -y xpad                                   # Sticky note application 
 sudo apt install -y kolourpaint                             # Paint
 sudo apt install -y mcomix                                  # Comic book viewer
@@ -70,6 +69,7 @@ sudo apt install -y libreoffice                             # Free office applic
 sudo apt install -y aria2                                   # Command-line download utility
 sudo apt install -y cheese 					                # Camera
 sudo apt install -y parcellite				                # Clipboard tool (Shortcut : Ctrl+Alt+H)
+sudo apt install -y unar                                    # unzip alternater
 sudo apt install -y xinput                                  # utility to configure and test X input devices
 sudo apt install -y barrier                                 # KVM software
 
@@ -81,13 +81,13 @@ sudo apt install -y brightnessctl                           # Control device bri
 sudo apt install -y network-manager			            	# nmtui(네트워크 관리자)
 sudo apt install -y xtrlock			            	        # Lock display and mouse
 
-
 #---------- 개발 유틸리티 ----------
 sudo apt install -y curl                                    # Command line to data transfer tool 
 sudo apt install -y software-properties-common 		        # PPA Support
 sudo apt install -y openjdk-17-jdk                          # JDK 17
 sudo apt install -y build-essential gcc g++ make            # C/C++ 컴파일러 & 기본 라이브러리
-sudo apt install -y libc6-dev 			                   	# stdio.h 해더파일
+sudo apt install -y libc6-dev 			                   	# C 라이브러리
+sudo apt install -y libncurses5-dev                         # C 라이브러리
 sudo apt install -y ccls                                    # C/C++/Objective-C 언어 서버
 sudo apt install -y exuberant-ctags                         # ctag
 sudo apt install -y cscope                                  # cscope

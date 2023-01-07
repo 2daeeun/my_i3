@@ -17,6 +17,7 @@ plugins=(
     git
     zsh-syntax-highlighting 
     zsh-autosuggestions 
+    zsh-wakatime
 )
 source $ZSH/oh-my-zsh.sh
 
@@ -26,9 +27,12 @@ alias rrm="sudo mv -t /tmp"
 alias doc="cd ~/Documents"
 alias dow="cd ~/Downloads"
 alias github="cd ~/Documents/github"
+alias study="cd ~/Documents/study"
 alias my="cd ~/Documents/github/my_i3"
 alias lock="xtrlock" 
-alias cal="if [ -t 1 ] ; then ncal -b ; else /usr/bin/cal ; fi"
+# alias cal="if [ -t 1 ] ; then ncal -b ; else /usr/bin/cal ; fi"
+# alias cap="scrot -s '%F_%T.png' -e 'xclip -selection clip -t image/png "$f"; mv "$f" ~/Pictures/'"
+alias cap="~/./.scrot_clipboard.sh"
 alias weather_home="curl wttr.in/37.5508,126.8648"
 alias weather_school="curl wttr.in/37.4868,126.8224"
 alias e="exit"
@@ -45,3 +49,5 @@ alias java='java "$_SILENT_JAVA_OPTIONS"'
 
 #"Shutdown & Reboot Command Not Found" error solve
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/sbin
+# wakatime project detection
+export ZSH_WAKATIME_PROJECT_DETECTION=true

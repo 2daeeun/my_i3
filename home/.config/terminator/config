@@ -7,7 +7,7 @@
   line_down = <Primary><Shift>j
 [profiles]
   [[default]]
-    audible_bell = True
+    icon_bell = False
     background_darkness = 0.93
     background_type = transparent
     cursor_color = "#aaaaaa"
