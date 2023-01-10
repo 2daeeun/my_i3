@@ -14,7 +14,7 @@ set title                       "타이틀바에 현재 편집 중인 파일을 
 set cursorline                  "커서가 있는 라인을 강조 표시 
 set wrap                        "너무 긴 줄 자동 줄바꿈
 "set nowrap                     "wrap 해제
-set mouse=a                     "터미널 창에 마우스 (mouse) 클릭이 가능하도록 설정
+" set mouse=a                     "터미널 창에 마우스 (mouse) 클릭이 가능하도록 설정
 set clipboard=unnamed           "시스템의 클립 보드에서 vim 붙여 넣기. 
 set fileencodings=utf8,euc-kr   "한글 사용
 set noswapfile                  "vim에서 스왑 파일 생성 비활성화
@@ -30,7 +30,7 @@ set langmap=ㅁa,ㅠb,ㅊc,ㅇd,ㄷe,ㄹf,ㅎg,ㅗh,ㅑi,ㅓj,ㅏk,ㅣl,ㅡm,ㅜ
 
 "==========플러그인 설치==========
 call plug#begin('~/.local/share/nvim/plugged')
-
+Plug 'justmao945/vim-clang'
 "----꾸미기 관련-----
 Plug 'joshdick/onedark.vim'                         "onedark 테마 
 Plug 'vim-airline/vim-airline'                      "airline(vi 하단하고 상단 꾸밈)              

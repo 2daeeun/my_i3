@@ -47,8 +47,10 @@ sudo apt install -y xdotool                                # command-line X11 au
 
 # ----- Windows Manager Support Tool -----
 sudo apt install -y arandr                                  # arandr GUI
+sudo apt install -y autorandr                               # auto arandr
 sudo apt install -y rofi                                    # Application dmenu
 sudo apt install -y lightdm                                 # Lock Screen
+sudo apt install -y xdm                                     # Lock Screen 
 sudo apt install -y xfce4-power-manager                     # xfce power manager
 sudo apt install -y gpick                                   # Color Picker
 sudo apt install -y numlockx                                # Control the state of NumLock     
